@@ -4,6 +4,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+	important: true,
 	plugins: [
 		require('@tailwindcss/ui')({
 		 layout: 'sidebar',
