@@ -49,3 +49,9 @@ rails g controller static home
 
 ## Create a favicon with https://realfavicongenerator.net
 
+heroku create app_name
+
+git push heroku master
+
+heroku run rails db:migrate
+
