@@ -1,5 +1,5 @@
 # Documenting the steps I take when creating a new Rails App with Prismic and use TailwindCSS
- 
+
 
 rails new app_name --database=postgresql
 
@@ -39,9 +39,9 @@ rails db:create && rails db:migrate
 # Create a basic layout using the templates
 ## 1. Add a shared folder for global partials
 ## 2. Make sure to use stylesheet_pack_tag to import CSS
-### 3. Update the title and default metadata with the app name
-### 4. Copy the application layout
-### 5. Copy views/static/home.html.erb
+## 3. Update the title and default metadata with the app name
+## 4. Copy the application layout
+## 5. Copy views/static/home.html.erb
 
 rails g controller static home
 
@@ -49,9 +49,11 @@ rails g controller static home
 
 ## Create a favicon with https://realfavicongenerator.net
 
+## 1.  Add the favicon partial to the app templates
+## 2. Save the favicon files in the rails /public directory
+
 heroku create app_name
 
 git push heroku master
 
 heroku run rails db:migrate
-
