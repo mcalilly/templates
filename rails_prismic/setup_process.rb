@@ -34,6 +34,9 @@ yarn add @tailwindcss/ui
 
 yarn add alpinejs
 
+# Install Stimulus
+rails webpacker:install:stimulus
+
 rails db:create && rails db:migrate
 
 # Create a basic layout using the templates
@@ -52,8 +55,25 @@ rails g controller static home
 ## 1.  Add the favicon partial to the app templates
 ## 2. Save the favicon files in the rails /public directory
 
+
+# Add google analytics
+## Make sure to use the new analytics.js code https://developers.google.com/analytics/devguides/collection/analyticsjs
+
+# Deploy to Heroku 
 heroku create app_name
 
 git push heroku master
 
 heroku run rails db:migrate
+
+# Set up Prismic
+gem install prismic.io --pre
+
+# Add to the gemfile -> 
+gem 'prismic.io', require: 'prismic'
+bundle install
+
+# Start querying content with this:
+api = Prismic.api('https://your-repo-name.prismic.io/api')
+response = api.query(Prismic::Predicates.at("document.type", "page"))
+documents = response.results
