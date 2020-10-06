@@ -71,9 +71,13 @@ gem install prismic.io --pre
 
 # Add to the gemfile -> 
 gem 'prismic.io', require: 'prismic'
+gem 'kaminari'
 bundle install
 
-# Start querying content with this:
-api = Prismic.api('https://your-repo-name.prismic.io/api')
-response = api.query(Prismic::Predicates.at("document.type", "page"))
-documents = response.results
+# Next, add prismic templates from prismic rails example app
+
+# Then, set up metadata helpers
+## Copy the example page title and other metadata helpers from the Applciation helper template into helpers/application_helper.rb
+
+
+

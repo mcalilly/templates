@@ -1,12 +1,12 @@
 <head>
-	<title>App Name</title>
-
 	<%= render "shared/metadata" %>
+
+	<%= render "shared/fonts" %>
+
+	<%= render "shared/favicons" %>
 
 	<%= stylesheet_pack_tag "application", media: "all", "data-turbolinks-track": "reload" %>
 	<%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
-
-	<%= render "shared/favicons" %>
 
 	<% if Rails.env.production? %>
 		<%= render "shared/google_analytics" %>

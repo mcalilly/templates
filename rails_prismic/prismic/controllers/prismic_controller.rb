@@ -3,7 +3,6 @@ module PrismicController
 
 	private
 
-
 	# If something goes wrong, it could be because of an invalid preview token
 	def clearcookies
 		cookies.delete Prismic::PREVIEW_COOKIE
@@ -106,6 +105,5 @@ module PrismicController
 		end
 
 	end
-
 
 end

@@ -1,5 +1,6 @@
 ---
-url: https://your-prismic-repo.prismic.io/api
+# This is your API endpoint found in Prismic > Settings > API Browser
+url: https://your-repo.prismic.io/api
 # If specified this token is used for all "guest" requests
 # token: ""
 # OAuth2 configuration
